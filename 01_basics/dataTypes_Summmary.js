@@ -35,3 +35,22 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// Stack (primitive) & Heap (non-primitive)
+// In Stack we have copy and in Heap we have reference
+let myName = "Ramesh Choudhary"
+let petName = myName
+petName = "Ramu"
+console.log(myName)
+console.log(petName)
+
+let userOne = {
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+
+userTwo = userOne
+
+userTwo.email = "RameshChoudhary@gmail.com"
+
+console.log(userOne)
